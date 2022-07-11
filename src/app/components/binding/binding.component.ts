@@ -12,8 +12,8 @@ export class BindingComponent implements OnInit {
   text:string ="";
   isHiden: boolean = false;
   image: { url: string; alt: string } = {
-    url: 'https://cdn.pixabay.com/photo/2022/06/23/12/58/clouds-7279751_960_720.jpg',
-    alt: 'light clouds',
+    url: 'https://cdn.pixabay.com/photo/2022/06/09/10/13/beach-7252178_960_720.jpg',
+    alt: 'beach-social-media',
   };
   
   constructor() { }

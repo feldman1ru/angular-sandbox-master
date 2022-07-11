@@ -1,12 +1,15 @@
-<figure>
-  <img *ngIf="!isHiden" class="center mt-4 d-flex" [src]="image.url" [alt]="text" [title]="image.alt"
-    [hidden]="isHiden" />
-  {{figcaption}}
-</figure>
+<div class="center mt-5">
+  <figure>
+    <img *ngIf="!isHiden" [src]="image.url" [alt]="text" [title]="image.alt" [hidden]="isHiden" />
+    <figcaption class="d-flex">{{text}}</figcaption>
+  </figure>
+</div>
 
-<div class="container center m-2 flex-column">
+
+<div class="center mt-2 flex-column">
   <button class="btn btn-outline-info btn-lg w-25" type="button" (click)="toggle()">Click</button>
-  <div class="btn-lg w-25 mt-2" ng-controller="myFun">
-    <input type="text" [(ngModel)]="text">
+  <div class="btn mt-2">
+    <input class="form-control-lg p-lg-2 border border-success" type="text" [(ngModel)]="text"
+      placeholder="start writing....">
   </div>
 </div>
